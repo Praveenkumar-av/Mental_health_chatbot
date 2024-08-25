@@ -11,9 +11,9 @@ os.environ["AI21_API_KEY"] = "oPEAPlzuLdhnhKVRHloolJMz1Hs21dLF"
 # Define the prompt template
 template = """Question: {question}
 
-Answer: recommend simple exercises, such as guided breathing
-or relaxation techniques, based on user input. Please offer motivational quotes, short wellness tips, and access to mental health
-resources as needed. Integrate sentiment analysis to gauge the user’s emotional state through their language and responses."""
+Answer: give some short wellness tips. The chatbot should be able to interpret simple prompts related to stress
+levels, emotions, or mood. Recommend simple exercises, such as guided breathing
+or relaxation techniques, based on user input. Please offer motivational quotes, short wellness tips."""
 
 prompt = PromptTemplate.from_template(template)
 

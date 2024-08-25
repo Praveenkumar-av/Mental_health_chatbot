@@ -244,15 +244,41 @@ border-radius: 0 0 15px 15px !important;
 	background-color: #0056b3;
 }
 
-.music-section {
-	text-align: center;
+.button-container {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	/* Space between buttons */
 }
 
-.music-btn {
-	width: 50px;
-	height: 50px;
-	margin-bottom: 10px;
-	border-radius: 50%;
-	font-size: 20px;
-	padding: 0;
+.music-button {
+	background-color: #007bff;
+	/* Blue background */
+	color: white;
+	/* White text */
+	border: none;
+	border-radius: 5px;
+	/* Rounded corners */
+	padding: 10px 20px;
+	/* Padding inside the button */
+	cursor: pointer;
+	font-size: 16px;
+	/* Font size */
+	transition: background-color 0.3s;
+	/* Smooth color transition */
+}
+
+.music-button:hover {
+	background-color: #0056b3;
+	/* Darker blue on hover */
+}
+
+.music-button:focus {
+	outline: none;
+	/* Remove default focus outline */
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+	/* Custom focus effect */
 }
